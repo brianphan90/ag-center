@@ -1,0 +1,47 @@
+.shape {
+	position: relative;
+	height: 15px;
+	width: 15px;
+}
+
+.square {
+	@extend .shape;
+
+	border-radius: 3px;
+}
+
+.circle {
+	@extend .shape;
+
+	background-color: black;
+	border-radius: 50%;
+}
+
+// .triangle {
+// 	@extend .shape;
+// 	background-color: transparent !important;
+
+// 	&::before {
+// 		content: ' ';
+// 		border: 10px solid black;
+// 		border-top: 0;
+// 		border-right-color: transparent;
+// 		border-left-color: transparent;
+// 		position: absolute;
+// 		left: 50%;
+// 		top: 50%;
+//     transform: translate(-50%, -50%);
+// 	}
+
+// 	&.positive::before {
+// 		top: 50%;
+// 		transform: translate(-50%,-50%);
+// 		border-bottom-color: $status-positive;
+// 	}
+
+// 	&.negative::before {
+// 		top: 50%;
+// 		transform: translate(-50%,-50%) rotate(180deg);
+// 		border-bottom-color: $status-negative;
+// 	}
+// }
